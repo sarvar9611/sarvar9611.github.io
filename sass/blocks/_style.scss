@@ -1,0 +1,18 @@
+.check_list{
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.check_list li{
+    position: relative;
+}
+.check_list li::before{
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-image: url('../../img/check.png');
+    background-size: cover;
+    top: 5px;
+    left: -18px;
+}
