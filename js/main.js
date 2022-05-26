@@ -1,8 +1,9 @@
 const arr = [];
 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+function splitArr(params) {
+    let userInput = prompt("", "");
 }
-var x = 5;
-console.log(x);
+
+for (; ;) {
+  
+}
