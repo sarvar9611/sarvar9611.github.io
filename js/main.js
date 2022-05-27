@@ -1,9 +1,17 @@
 const arr = [];
 
 function splitArr(params) {
-    let userInput = prompt("", "");
+    arr.push(prompt("Input here:", "").split(","));
 }
 
-for (; ;) {
-  
+let isTrue = true;
+for (;isTrue ;) {
+    splitArr();
+
+    isTrue = confirm("Davom etasizmi?");
 }
+
+
+for (let i of arr) {
+        document.write(`${i}<br>`)
+    }
