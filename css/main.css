@@ -379,23 +379,15 @@ a {
   margin: 0 auto;
 }
 
-.check_list {
-  list-style-type: none;
-  padding-left: 15px;
+li {
+  margin: 10px 0;
 }
 
-.check_list li {
-  position: relative;
+li div {
+  display: inline-block;
 }
 
-.check_list li::before {
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 13px;
-  background-image: url("../../img/check.png");
-  background-size: cover;
-  top: 5px;
-  left: -18px;
+li div:nth-child(2) {
+  margin: 0 200px;
 }
 /*# sourceMappingURL=main.css.map */
