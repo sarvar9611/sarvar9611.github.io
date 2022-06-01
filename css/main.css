@@ -379,6 +379,11 @@ a {
   margin: 0 auto;
 }
 
+ol {
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
 li {
   margin: 10px 0;
 }

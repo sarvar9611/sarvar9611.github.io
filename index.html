@@ -14,12 +14,12 @@
     <div class="container px-5 pt-5">
         <form>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Enter new contact name</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                <label for="nameInput" class="form-label">Enter new contact name</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Name" required autofocus>
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Enter new contact phone number</label>
-                <input type="tel" class="form-control" id="telInput" placeholder="Phone number">
+                <label for="telInput" class="form-label">Enter new contact phone number</label>
+                <input type="tel" class="form-control" id="telInput" placeholder="Phone number" required>
             </div>
         </form>
         <button class="btn btn-primary" onclick="saveContact()">Add contact</button>
