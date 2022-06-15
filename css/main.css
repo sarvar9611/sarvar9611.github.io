@@ -378,21 +378,4 @@ a {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-ol {
-  border: 1px solid black;
-  margin-top: 20px;
-}
-
-li {
-  margin: 10px 0;
-}
-
-li div {
-  display: inline-block;
-}
-
-li div:nth-child(2) {
-  margin: 0 200px;
-}
 /*# sourceMappingURL=main.css.map */
