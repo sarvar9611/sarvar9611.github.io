@@ -378,4 +378,17 @@ a {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+body {
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #121212;
+}
+
+.logo__img {
+  width: 80px;
+  height: 40px;
+}
 /*# sourceMappingURL=main.css.map */
