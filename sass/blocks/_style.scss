@@ -1,5 +1,6 @@
 body {
     color: #ffffff;
+    font-family: calibri;
 }
 .navbar {
     background-color: #121212;
@@ -8,11 +9,72 @@ body {
     width: 80px;
     height: 40px;
 }
-.input-group {
-    width: 400px;
-}
+
 
 .logo2__img {
     width: 65px;
     height: 20px;
+}
+
+.navbar .container {
+    justify-content: space-evenly;
+}
+
+.content-section {
+    background-color: black;
+    color: #ffffff;
+}
+
+.content-section .container h2 {
+    color: #f5c518;
+}
+.chapters-box {
+    display: flex;
+}
+
+.chapter {
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.chapter.active::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #f5c518;
+    bottom: 10px;
+    left: 5px;
+    right: 5px;
+}
+
+#trailers-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.trailer {
+    position: relative;
+    margin: 15px 0;
+    justify-content: center;
+}
+.trailer:hover {
+    box-shadow: white 0 0 10px 1px;
+}
+
+.teaser__img {
+    width: 100%;
+    height: auto;
+}
+.trailer__title--eng, .genre {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.trailer__title-box {
+    background-color: #ffffff1c;
+    padding: 5px 10px;
+}
+.trailer__title--ru {
+    font-size: 20px;
 }

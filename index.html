@@ -17,15 +17,53 @@
 
             <p><i class="fa-solid fa-bars"></i> Menu</p>
 
-            <div class="input-group">
+            <div class="input-group w-50">
                 <span class="input-group-text bg-white">All      <i class="fa-solid fa-caret-down"></i></span>
                 <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                 <span class="input-group-text bg-white"><i class="fa-solid fa-magnifying-glass"></i></span>
             </div>
 
             <a href="#" class="logo2__link"><img class="logo2__img" src="img/imdbPro_logo.png" alt="Logo2"></a>
+
+            <a href="#">
+                <i class="fa-solid fa-heart-circle-plus"></i>
+                Watchlist
+            </a>
+
+            <a href="#">Sign in</a>
         </div>
     </nav>
+
+    <section class="content-section"> <!-- cs -->
+        <div class="container">
+            <h2 class="py-lg-3">
+                Watch New Movie & TV Trailers
+            </h2>
+
+            <div class="chapters-box">
+                <p id="chapter1" class="chapter p-lg-4">Trending trailers</p>
+                <p id="chapter2" class="chapter p-lg-4">Most anticipated</p>
+                <p id="chapter3" class="chapter p-lg-4">Most popular</p>
+                <p id="chapter4" class="chapter p-lg-4">recently added</p>
+            </div>
+
+            <div class="p-3 row" id="trailers-box">
+                
+                <div class="trailer col-2">
+                    <a href="https://www.youtube.com/watch?v=lB7wk00v-0M" class="teaser__link">
+                        <img src="js/img/1.jpg" height="300" alt="image" class="teaser__img">
+                    </a>
+                    <div class="trailer__title-box">
+                        <p class="trailer__title--eng">Sonic the hedhedog 2</p>
+                        <a href="https://www.youtube.com/watch?v=lB7wk00v-0M" class="trailer__title--ru">Соник2 в кино</a>
+                        <p class="genre">Жанр: мультифильм</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
     <script src="js/db.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.js"></script>

@@ -381,6 +381,7 @@ a {
 
 body {
   color: #ffffff;
+  font-family: calibri;
 }
 
 .navbar {
@@ -392,12 +393,87 @@ body {
   height: 40px;
 }
 
-.input-group {
-  width: 400px;
-}
-
 .logo2__img {
   width: 65px;
   height: 20px;
+}
+
+.navbar .container {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content-section {
+  background-color: black;
+  color: #ffffff;
+}
+
+.content-section .container h2 {
+  color: #f5c518;
+}
+
+.chapters-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chapter {
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.chapter.active::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #f5c518;
+  bottom: 10px;
+  left: 5px;
+  right: 5px;
+}
+
+#trailers-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.trailer {
+  position: relative;
+  margin: 15px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trailer:hover {
+  -webkit-box-shadow: white 0 0 10px 1px;
+          box-shadow: white 0 0 10px 1px;
+}
+
+.teaser__img {
+  width: 100%;
+  height: auto;
+}
+
+.trailer__title--eng, .genre {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.trailer__title-box {
+  background-color: #ffffff1c;
+  padding: 5px 10px;
+}
+
+.trailer__title--ru {
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */
