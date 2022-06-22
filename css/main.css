@@ -447,10 +447,6 @@ body {
           justify-content: flex-start;
 }
 
-.d-hide {
-  display: none;
-}
-
 .trailer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,5 +572,41 @@ body {
   height: 100%;
   border: 2px solid white;
   overflow-x: hidden;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.carousel a img {
+  width: auto;
+  height: 100%;
+}
+
+.d-hide {
+  display: none;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.carousel-left {
+  left: 20px;
+}
+
+.carousel-right {
+  right: 20px;
 }
 /*# sourceMappingURL=main.css.map */

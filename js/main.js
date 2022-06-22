@@ -40,14 +40,44 @@ function createTrailers(item, index) {
 function createCarousel(item, index) {
     
 }
-trailers.forEach(createTrailers);
-function newTab(num) {
-    switch (num) {
+
+function classActive(num) {
+    document.querySelector('#chapter1').classList.remove('active');
+    document.querySelector('#chapter2').classList.remove('active');
+    document.querySelector('#chapter3').classList.remove('active');
+    document.querySelector('#chapter4').classList.remove('active');
+
+        switch (num) {
         case 1:
-            trailers.forEach(createTrailers);
+            document.querySelector('#chapter1').classList.add('active');
             break;
         case 2:
-            trailers.forEach(createCarousel);
+            document.querySelector('#chapter2').classList.add('active');
+            break;
+        case 3:
+            document.querySelector('#chapter3').classList.add('active');
+            break;
+        case 4:
+            document.querySelector('#chapter4').classList.add('active');
+            break;
+        default:
+            break;
+    }
+}
+
+trailers.forEach(createTrailers);
+trailers.forEach(createCarousel);
+
+function newTab(num) {
+    classActive(num);
+    document.querySelector('.trailers-box').classList.add('d-hide');
+    document.querySelector('.carousel-box').classList.add('d-hide');
+    switch (num) {
+        case 1:
+            document.querySelector('.trailers-box').classList.remove('d-hide');
+            break;
+        case 2:
+            document.querySelector('.carousel-box').classList.remove('d-hide');
             break;
         case 3:
             break;

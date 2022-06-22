@@ -43,16 +43,21 @@
             <div class="chapters-box">
                 <p id="chapter1" onclick="newTab(1)" class="chapter p-lg-4 active">Trending trailers</p>
                 <p id="chapter2" onclick="newTab(2)" class="chapter p-lg-4">Most anticipated</p>
-                <p id="chapter3" class="chapter p-lg-4">Most popular</p>
-                <p id="chapter4" class="chapter p-lg-4">recently added</p>
+                <p id="chapter3" onclick="newTab(3)" class="chapter p-lg-4">Most popular</p>
+                <p id="chapter4" onclick="newTab(4)" class="chapter p-lg-4">recently added</p>
             </div>
 
             <div class="p-3 trailers-box" id="trailers-box">
             </div>
 
-            <div class="carousel-box">
+            <div class="carousel-box d-hide" id="carousel-box">
                 <div class="carousel">
-
+                    <a><img src="js/img/1.jpg" alt=""></a>
+                    <a><img src="js/img/2.jpg" alt=""></a>
+                    <a><img src="js/img/3.jpg" alt=""></a>
+                    <a><img src="js/img/4.jpg" alt=""></a>
+                    <button class="carousel-left carousel-btn" onclick="updateCarousel(-1)"><i class="fa-thin fa-square-chevron-left"></i></button>
+                    <button class="carousel-right carousel-btn" onclick="updateCarousel(1)"><i class="fa-thin fa-square-chevron-right"></i></button>
                 </div>
             </div>
         </div>

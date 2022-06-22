@@ -53,9 +53,6 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-.d-hide {
-    display: none;
-}
 .trailer {
     display: flex;
     flex-direction: column;
@@ -157,4 +154,33 @@ body {
     border: 2px solid white;
     overflow-x: hidden;
     flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.carousel a img {
+    width: auto;
+    height: 100%;
+}
+
+.d-hide {
+    display: none;
+}
+
+.carousel-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.carousel-left {
+    left: 20px;
+}
+.carousel-right {
+    right: 20px;
 }
