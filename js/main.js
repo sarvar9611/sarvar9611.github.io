@@ -77,6 +77,7 @@ function newTab(num) {
             document.querySelector('.trailers-box').classList.remove('d-hide');
             break;
         case 2:
+            updateCarousel();
             document.querySelector('.carousel-box').classList.remove('d-hide');
             break;
         case 3:
@@ -87,4 +88,43 @@ function newTab(num) {
         default:
             break;
     }
+}
+
+
+
+// Carousel block start
+
+let elem1 = 0,
+    elem2 = 1,
+    elem3 = 2,
+    elem4 = 4,
+    index = 0,
+    arrLength = trailers.length;
+
+const carouselItem = document.querySelectorAll('.carousel__item__link');
+
+function counterFunc() {
+    elem1 = (index < arrLength) ? index: 0;
+    elem2 = (elem1 < arrLength - 1) ? elem1 + 1: 0;
+    elem3 = (elem2 < arrLength - 1) ? elem2 + 1: 0;
+    elem4 = (elem3 < arrLength -1) ? elem3 + 1: 0;
+}
+
+function updateCarousel(num = 0) {
+    // index = index + num;
+    if (num > 0 && index < arrLength) {
+        index = index + 1;
+    } else if (index == arrLength) {
+        index = 0;
+    } else if (num < 0 && index >= 1) {
+        index = index - 1;
+    } else {
+        index = arrLength - 1;
+    }
+    // alert(index);
+    counterFunc();
+    carouselItem[0].innerHTML = `<img src="js/img/${elem1 + 1}.jpg" alt="">`;
+    carouselItem[1].innerHTML = `<img src="js/img/${elem2 + 1}.jpg" alt="">`;
+    carouselItem[2].innerHTML = `<img src="js/img/${elem3 + 1}.jpg" alt="">`;
+    carouselItem[3].innerHTML = `<img src="js/img/${elem4 + 1}.jpg" alt="">`;
 }
